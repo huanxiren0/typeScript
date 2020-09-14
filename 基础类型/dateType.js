@@ -1,0 +1,28 @@
+var x = 1;
+console.log(x);
+x = 'wo shi huaxiren0';
+console.log(x);
+x = false;
+console.log(x);
+// x.hasSomeOne();
+var arr = [1, false, 'huanxiren0'];
+console.log(arr);
+arr[1] = '秀徐爱';
+console.log(arr);
+var x2 = 1;
+console.log(x2);
+// x2 = false;
+var x3 = 'huanxiren0';
+var x4 = true;
+var arr1 = [1, 2, 3];
+// arr1[0] = false;
+var arr2;
+arr2 = ['1', false];
+var obj;
+(function (obj) {
+    obj[obj["name"] = 0] = "name";
+    obj[obj["age"] = 1] = "age";
+    obj[obj["sex"] = 2] = "sex";
+})(obj || (obj = {}));
+var c = obj.name;
+console.log(c);
