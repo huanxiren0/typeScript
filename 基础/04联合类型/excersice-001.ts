@@ -1,4 +1,4 @@
-let myNumber :number | string;
+let myNumber :number | string |boolean;
 myNumber = 7;
 myNumber = 'seven';
 myNumber = false;//Type 'boolean' is not assignable to type 'string | number'.

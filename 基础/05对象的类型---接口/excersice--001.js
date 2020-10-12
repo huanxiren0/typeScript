@@ -24,4 +24,6 @@ var tom4 = {
     id: 3333,
     name: 'tom4'
 };
-tom4.id = 0;
+var tom5 = {
+    name: '1'
+};

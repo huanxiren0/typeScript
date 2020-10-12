@@ -51,4 +51,11 @@ let tom4:Person4 = {
     name:'tom4'
 }
 //1.只读的约束存在于第一次给对象赋值的时候，而不是第一次给只读属性赋值的时候
-//2.只读的属性也必须是
+
+interface Personal5{
+    [suibain:string]:string;
+}
+
+let tom5:Personal5 = {
+    name:'1'
+}
