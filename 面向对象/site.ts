@@ -6,3 +6,4 @@ class Site{
 
 const one = new Site();
 one.name();
+one.sex = '男';

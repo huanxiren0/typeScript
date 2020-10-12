@@ -40,3 +40,5 @@ let n:null = null;
 let num:number = 1;
 num = u;
 num = n;
+
+let num2:number = undefined;

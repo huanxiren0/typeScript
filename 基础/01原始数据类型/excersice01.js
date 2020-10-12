@@ -27,3 +27,4 @@ var n = null;
 var num = 1;
 num = u;
 num = n;
+var num2 = undefined;
