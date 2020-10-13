@@ -24,4 +24,10 @@ var tom = {
         console.log('run');
     }
 };
-console.log(isFish(tom));
+function isApiError(error) {
+    if (typeof error.code === 'number') {
+        // if(error instanceof ApiError){
+        return true;
+    }
+    return false;
+}

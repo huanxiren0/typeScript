@@ -49,3 +49,26 @@ const tom :Cat = {
 
 
 //（二）将一个父类断言为更加具体的子类
+// class ApiError extends Error{
+//     code: number=0;
+// }
+// class HttpError extends Error{
+//     statusCode:number= 200;
+// }
+interface ApiError extends Error{
+    code:number;
+
+}
+interface HttpError extends Error{
+    statusCode:number;
+}
+function isApiError(error:Error){
+    if(typeof (error as ApiError).code==='number'){
+    // if(error instanceof ApiError){
+        return true;
+    }
+    return false;
+}
+
+
+//（三）将任何一个类型断言为any
