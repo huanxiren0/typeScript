@@ -86,10 +86,11 @@ function push2(array) {
 }
 var a1 = ['aaa', 1];
 console.log(push2(a1, 'asas', 34, { a: 1, n: 2 }));
-// function reverse(x:string|number):string|number{
-//     if(typeof x==='number'){
-//         return Number(x.toString().split('').reverse().join(''));
-//     }else if(typeof x==='string'){
-//         return x.split('').reverse().join('');
-//     }
-// }
+function reverse(x) {
+    if (typeof x === 'number') {
+        return Number(x.toString().split('').reverse().join(''));
+    }
+    else if (typeof x === 'string') {
+        return x.split('').reverse().join('');
+    }
+}
