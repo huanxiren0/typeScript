@@ -1,0 +1,40 @@
+//es5只有全局作用域和函数作用域，没有块级作用域，这带来很多不合理的场景。
+//1、内层变量可能会覆盖外层变量。
+var tmp = new Date();
+
+function f(){
+    console.log(tmp);
+    if(false){
+        var tmp = 'hello,guy';
+    }
+}
+f();//undefined
+
+//2、用来计数的循环变量泄露为全局变量。
+var s = 'hello';
+
+for(var i = 0;i<s.length;i++){
+    console.log(s[i]);
+}
+
+console.log(i)
+
+function f(){
+    console.log('I am outside');
+}
+
+(function(){
+    if(false){
+        function f(){
+            console.log('I am inside');
+        }
+    }
+    // f()
+}())
+
+// if(true) let x = 1;
+
+if(true){
+    let y = 1;
+    console.log(y)
+}
